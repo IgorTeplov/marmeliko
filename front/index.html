@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" href="./assets/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+
+	<script>
+		setTimeout(()=>{
+			document.getElementById('loader').classList.add('load')
+			setTimeout(()=>{
+				document.getElementById('loader').classList.add('end')
+			}, 1100)
+		}, 3000)
+	</script>
+
+</head>
+<body>
+	<div id="root">
+		<div class="loader" id="loader">
+			<div class="d-flex justify-content-center">
+				<div class="lds-dual-ring align-self-center"></div>
+			</div>
+		</div>
+
+
+		<header>
+			<img class="background" src="https://via.placeholder.com/2560x800/7e91b8/7e91b8">
+			<div class="naw-wrapper">
+				<div class="fixed-wrapper fixed-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 px-4">
+								<div class="d-flex justify-content-between">
+									<nav class="navbar navbar-expand-lg navbar-light">
+										<a class="navbar-brand" href="#">
+											<img class="logo" src="./assets/logo.svg">
+										</a>
+										<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+											<span class="navbar-toggler-icon"></span>
+										</button>
+										<div class="collapse navbar-collapse" id="navbarSupportedContent">
+											<ul class="navbar-nav d-flex justify-content-around w-100">
+												<li class="nav-item">
+													<a class="nav-link" href="#">Обо мне</a>
+												</li>
+												<li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+													Услуги
+													</a>
+													<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+														<li>
+															<a class="dropdown-item" href="#">
+																Курсы
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">
+																Корпоративные тренинги
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">
+																Мастер-классы
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">
+																Консультации
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Мои проекты</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Блог</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+
+									<div class="d-flex naw-wrapper">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											EN
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdownLang">
+											<li><a class="dropdown-item" href="#">EN</a></li>
+											<li><a class="dropdown-item" href="#">UK</a></li>
+											<li><a class="dropdown-item" href="#">RU</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bordered-window">
+							<div class="rectangle-border"></div>
+							<div class="content">
+								<div class="text-center">
+									<h1>Марина Мельник</h1>
+									<p>Помогаю сориентироваться в море возможностей, достичь своих целей с помощью проектного подхода. Понятно. Пошагово. Кайфово.</p>
+								</div>
+								<div class="text-center d-flex pt-5">
+									<a class="yellow-button mx-auto mt-5" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container pb-4">
+				<div class="socials row">
+					<div class="col-12 col-lg-4 order-lg-1 text-center mb-4">
+						<span><a href="tel:+380503636467">+38 (050) 363 64 67</a></span>
+					</div>
+					<div class="col-11 col-lg-4 order-lg-0">
+						<nav>
+							<ul class="d-flex">
+								<li><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+								<li><a href="#"><i class="fab fa-telegram fa-2x"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+								<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+					
+					<div class="col-1 col-lg-4 order-lg-2 text-end">
+						<a href="#about" id="toabout"><img src="./assets/arrow.svg"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<div class="m-3" id="about"></div>
+						<h1 class="dot-orange text-center my-5 pt-5">Marmeliko</h1>
+						<div class="columnar">
+							<p>Сайт - это точка сборки всех статей, видео и публикации в социальных сетях посвященных проектному подходу для сбалансированной, гармоничной и радостной жизни, а также информация о моих проектах. Даже наши состояния - это мини проекты и, если результат этих проектов над не подходит, мы всегда может стартовать разработку следующей версии и выйти на другие ощущения.
+							<br>
+							Здесь я буду делиться практиками проектного менеджмента и показывать, как они работают в любой сфере нашей жизни. Я буду приводить личные примеры - в основном, а также примеры моих клиентов, коллег и окружающих по их согласию. Повидав и пройдя через множество успешных и не успешных проектов как в профессиональной сфере, так и в личностной, я обрела еще...</p>
+						</div>
+					</div>
+					<div class="col-12 text-center my-5 py-5">
+						<span class="turnout">
+							<blockquote>Всё то, что есть в нашей жизни когда-то было нашим или чьим-то проектом.</blockquote>
+						</span>
+					</div>
+					<div class="col-12 my-5 py-5">
+						<form class="p-4">
+							<div class="bordered-window">
+								<div class="rectangle-border"></div>
+								<div class="content px-1 py-4">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center text-center p-5">
+												<img src="https://via.placeholder.com/800x800/7e91b8/7e91b8" class="mx-auto">
+												<span class="mt-4">Марина Мельник. Проект-менеджер</span>
+											</div>
+											<div class="col-12 col-lg-6 order-lg-0">
+												<h3 class="dot-orange mb-4">Давайте обсудим чем я могу вам помочь</h3>
+												<p>Запишитесь на бесплатную консультацию и я свяжусь с вами</p>
+												<div class="container p-0 mb-4">
+													<div class="row">
+														<div class="col-12 col-md-10  col-xl-8 col-xxl-7">
+															<input type="text" class="my-4 mb-2 w-100" placeholder="Имя">
+															<input type="text" class="my-4 mt-2 w-100" placeholder="+38 (___) ___-__-__">
+															<button class="yellow-button alt w-100">Записаться</button>
+														</div>
+													</div>
+												</div>
+												<input id="iagree" type="checkbox">
+												<label for="iagree">Даю согласие на обработку данных</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-wrapper">
+			<div class="container">
+				<div class="row py-5 text-center">
+					<div class="col-12">
+						<h3 class="my-5 py-5">Давайте свяжемся</h3>
+					</div>
+					<div class="mb-5 pb-5 row">
+						<div class="col-12 col-md-4 my-2">
+							<img src="./assets/calling.svg">
+							<span class="my-3">Звоните:</span>
+							<a href="tel:+380503636467">+38 (050) 363 64 67</a>
+						</div>
+						<div class="col-12 col-md-4 my-2">
+							<img src="./assets/message.svg">
+							<span class="my-3">Пишите:</span>
+							<a href="mail:marmeliko@gmail.com">marmeliko@gmail.com</a>
+						</div>
+						<div class="col-12 col-md-4 my-2">
+							<img src="./assets/chat.svg">
+							<span class="my-3">LinkedIn:</span>
+							<a href="#">LinkedIn</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<h1 class="dot-laguna my-5 pt-5">Блог</h1>
+						<div class="list py-5">
+							<div class="container">
+								<div class="row">
+									<div class="d-flex justify-content-center">
+										<div class="lds-dual-ring align-self-center"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="yellow-button bordered mx-auto my-5"><a href="#">Посмотреть все</a></button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<h1 class="dot-laguna my-5 pt-5">Блог</h1>
+						<div class="list py-5">
+							<div class="container">
+								<div class="row">
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="yellow-button bordered mx-auto my-5">Посмотреть все</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<h1 class="dot-laguna my-5 pt-5">Блог</h1>
+						<div class="list py-5">
+							<div class="container">
+								<div class="row">
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Omnis, porro velit! Ea commodi, atque ex tempora enim consequatur perspiciatis laboriosam temporibus ullam exercitationem nihil fuga aut numquam cumque, incidunt nobis.</span>
+											<span class="date">05.07.2020</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-center">
+										<div class="lds-dual-ring align-self-center"></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="items">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<h1 class="dot-laguna my-5 pt-5">Курсы</h1>
+						<div class="list py-5">
+							<div class="container">
+								<div class="row">
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+
+									<div class="item">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="yellow-button bordered mx-auto my-5">Посмотреть все</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="items">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5">
+						<h1 class="dot-laguna my-5 pt-5">Курсы</h1>
+						<div class="list py-5">
+							<div class="container">
+								<div class="row">
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+
+									<div class="item big">
+										<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8" alt="">
+										<div class="content d-flex">
+											<div class="title">
+												<h4><a href="#">Name</a></h4>
+												<span class="subtitle">Sub name</span>
+											</div>
+											<span class="description"></span>
+											<span class="date"></span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-center">
+										<div class="lds-dual-ring align-self-center"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5 py-5 px-3">
+						<h1>Title</h1>
+						<h2>Sub Title</h2>
+						<img src="https://via.placeholder.com/2560x1300/7e91b8/7e91b8">
+						<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Ex eum maxime molestiae eligendi ipsum neque quaerat voluptas labore saepe, deserunt nostrum explicabo optio totam doloremque, quia dicta obcaecati. Magni, eveniet?</p>
+						<img src="https://via.placeholder.com/1300x800/7e91b8/7e91b8">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Esse nam voluptate qui quaerat, praesentium odit dolor, quasi, nulla nihil rem quae, blanditiis sapiente atque error tempora accusantium voluptas officiis labore.</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo neque, ullam, eos quasi obcaecati quo, deleniti voluptatibus rerum nemo repellendus hic, laborum quaerat. Harum nihil, omnis nesciunt doloribus illum et?</p>
+						<h2>Sub Title</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo neque, ullam, eos quasi obcaecati quo, deleniti voluptatibus rerum nemo repellendus hic, laborum quaerat. Harum nihil, omnis nesciunt doloribus illum et?</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo neque, ullam, eos quasi obcaecati quo, deleniti voluptatibus rerum nemo repellendus hic, laborum quaerat. Harum nihil, omnis nesciunt doloribus illum et?</p>
+						<img src="https://via.placeholder.com/1300x800/7e91b8/7e91b8">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-wraper">
+				<div class="footer-mask">
+					<div class="container py-3">
+						<div class="row">
+							<div class="col-12 col-lg-2 p-4 d-flex justify-content-center">
+								<a class="align-self-center" href="#"><img class="logo" src="./assets/logo.svg"></a>
+							</div>
+							<div class="col-12 col-lg-3 py-3">
+								<nav class="d-flex justify-content-between px-3 px-lg-1">
+									<ul>
+										<li><a href="#">Обо мне</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Мои проекты</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">Курсы</a></li>
+										<li><a href="#">Корпоративные тренинги</a></li>
+										<li><a href="#">Мастер-классы</a></li>
+										<li><a href="#">Консультации</a></li>
+									</ul>
+								</nav>
+								<div class="px-3 px-lg-1">
+									<a href="#">Политика обработки персональных данных</a>
+								</div>
+							</div>
+							<div class="col-12 col-lg-4 py-3">
+								<!-- Instagram pictures -->
+							</div>
+							<div class="col-12 col-lg-3 text-center">
+								<div class="d-flex justify-content-center h-100">
+									<div class="align-self-center">
+										<span><a href="tel:+380503636467">+38 (050) 363 64 67</a></span>
+										<ul class="d-flex justify-content-evenly mt-2">
+											<li><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+											<li><a href="#"><i class="fab fa-telegram fa-2x"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 text-center py-2">
+								<span> <a href="https://weem.pro">Powered by WeeM</a> © 2022</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
